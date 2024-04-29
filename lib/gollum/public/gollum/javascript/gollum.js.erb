@@ -591,10 +591,10 @@ $(document).ready(function() {
       commands: editorHotkeys // Ace's keybindings overrule mousetrap, so add some of gollum's keyboard shortcuts to the editor, as well.
     });
 
-    $("#gollum-editor-submit").click( function(e) {
+    $("#gollum-editor-form").submit( function(e) {
       e.preventDefault();
       // Prevent button from being clicked again
-      $(this).attr('disabled', true);
+      //$(this).attr('disabled', true);
 
       var formData = new FormData($('#gollum-editor-form').get(0));
       var selected = basicSelectGetSelection($('#wiki_format'));
