@@ -72,15 +72,27 @@ Gem::Specification.new do |s|
     lib/gollum/helpers.rb
     lib/gollum/locales/cn.yml
     lib/gollum/locales/en.yml
-    lib/gollum/public/assets/.sprockets-manifest-6c4a0bc907c3e25cb7e69c0faf6e71d2.json
+    lib/gollum/public/assets/.sprockets-manifest-c699386cf52c0568a4a71ed4a8707d4d.json
     lib/gollum/public/assets/app-05adca32f8f4f3effe10f8f4cf26dfd6a419ba986bce60d3f51a97e4055d4113.js
     lib/gollum/public/assets/app-05adca32f8f4f3effe10f8f4cf26dfd6a419ba986bce60d3f51a97e4055d4113.js.gz
+    lib/gollum/public/assets/app-1ce95d0a842c5e2e57048303fa2d66ac152593c5c7b36f95c1b92f1086ceabd6.css
+    lib/gollum/public/assets/app-1ce95d0a842c5e2e57048303fa2d66ac152593c5c7b36f95c1b92f1086ceabd6.css.gz
+    lib/gollum/public/assets/app-2f2e74aeb16dc2aa205fb6b7d80c9d399d76508e79b953a644b8204c927ce74f.js
+    lib/gollum/public/assets/app-2f2e74aeb16dc2aa205fb6b7d80c9d399d76508e79b953a644b8204c927ce74f.js.gz
+    lib/gollum/public/assets/app-4f67ac4dfc315d55b072320d44c2e963aa14465129a02bdbf78809818d7eb52b.js
+    lib/gollum/public/assets/app-4f67ac4dfc315d55b072320d44c2e963aa14465129a02bdbf78809818d7eb52b.js.gz
+    lib/gollum/public/assets/app-945849c0619cbb43254d2d58049eb15f957fcf8532b045c4f9da9ceea75c2c3c.css
+    lib/gollum/public/assets/app-945849c0619cbb43254d2d58049eb15f957fcf8532b045c4f9da9ceea75c2c3c.css.gz
+    lib/gollum/public/assets/app-aa6b5d9ee360a81f039940deead734d6bbba4a14600225e400c680c0c62e3dd4.js
+    lib/gollum/public/assets/app-aa6b5d9ee360a81f039940deead734d6bbba4a14600225e400c680c0c62e3dd4.js.gz
+    lib/gollum/public/assets/app-b8fabfddc6e199a6c466d3d2886c5f603da9f846139f1bef9c78f0519294cbef.js
+    lib/gollum/public/assets/app-b8fabfddc6e199a6c466d3d2886c5f603da9f846139f1bef9c78f0519294cbef.js.gz
     lib/gollum/public/assets/app-e224b375d824f0171fc926d624dc0887bf453db83f485b1992bc0859c4110e3e.css
     lib/gollum/public/assets/app-e224b375d824f0171fc926d624dc0887bf453db83f485b1992bc0859c4110e3e.css.gz
     lib/gollum/public/assets/criticmarkup-7b66f7a53b854bc9e4168be5b4725ca38e2bc6e9c41d5c050a9f60d9a94cb405.css
     lib/gollum/public/assets/criticmarkup-7b66f7a53b854bc9e4168be5b4725ca38e2bc6e9c41d5c050a9f60d9a94cb405.css.gz
-    lib/gollum/public/assets/editor-5ac2983673c8540e50683c3ae37f1635882e94a04a1e823776a663740fdb3aa7.js
-    lib/gollum/public/assets/editor-5ac2983673c8540e50683c3ae37f1635882e94a04a1e823776a663740fdb3aa7.js.gz
+    lib/gollum/public/assets/editor-6dbcd896b0eb5a8b74e08e907ec02a57731f0b6203862836c8f665614de9b312.js
+    lib/gollum/public/assets/editor-6dbcd896b0eb5a8b74e08e907ec02a57731f0b6203862836c8f665614de9b312.js.gz
     lib/gollum/public/assets/gollum.katex-e70c1d51a08ebfe759eecbb33fbed54f300ccd7fb8d0e86e251caaf4e50f6b68.js
     lib/gollum/public/assets/gollum.katex-e70c1d51a08ebfe759eecbb33fbed54f300ccd7fb8d0e86e251caaf4e50f6b68.js.gz
     lib/gollum/public/assets/gollum.mermaid-ccc590b7d9655deec94c9975f25d74fbe38f703c927e26cf81169d63fea7cd50.js
