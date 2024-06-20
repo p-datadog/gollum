@@ -92,7 +92,7 @@ MSG
     # and finally, let others enjoy our hard work:
     wiki_options[:base_path] = base_path unless base_path.empty?
   end
-  opts.on('--page-file-dir [PATH]', 'Specify the subdirectory for all pages. Default: repository root.',
+  opts.on('-d', '--page-file-dir [PATH]', 'Specify the subdirectory for all pages. Default: repository root.',
     'Example: setting this to \'pages\' will make Gollum serve only pages at \'<git-repo>/pages/*\'.') do |path|
     wiki_options[:page_file_dir] = path
   end
