@@ -85,6 +85,8 @@ Gem::Specification.new do |s|
     lib/gollum/public/assets/app-945849c0619cbb43254d2d58049eb15f957fcf8532b045c4f9da9ceea75c2c3c.css.gz
     lib/gollum/public/assets/app-aa6b5d9ee360a81f039940deead734d6bbba4a14600225e400c680c0c62e3dd4.js
     lib/gollum/public/assets/app-aa6b5d9ee360a81f039940deead734d6bbba4a14600225e400c680c0c62e3dd4.js.gz
+    lib/gollum/public/assets/app-b12f0fa18b6d1bbf09640d0f7e69af0028454288b3b99fa760747db123885ebe.js
+    lib/gollum/public/assets/app-b12f0fa18b6d1bbf09640d0f7e69af0028454288b3b99fa760747db123885ebe.js.gz
     lib/gollum/public/assets/app-b8fabfddc6e199a6c466d3d2886c5f603da9f846139f1bef9c78f0519294cbef.js
     lib/gollum/public/assets/app-b8fabfddc6e199a6c466d3d2886c5f603da9f846139f1bef9c78f0519294cbef.js.gz
     lib/gollum/public/assets/app-e224b375d824f0171fc926d624dc0887bf453db83f485b1992bc0859c4110e3e.css
