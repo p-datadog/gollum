@@ -66,8 +66,8 @@ def gem_file
   "o-#{name}-#{version}.gem"
 end
 
-def replace_header(head, header_name)
-  head.sub!(/(\.#{header_name}\s*= ').*'/) { "#{$1}#{send(header_name)}'"}
+def replace_header(head, header_name, value)
+  head.sub!(/(\.#{header_name}\s*= ').*'/) { "#{$1}#{value}'"}
 end
 
 def bundle_katex_fonts(assets_path)
@@ -180,8 +180,8 @@ task :gemspec => :validate do
   head, manifest, tail = spec.split("  # = MANIFEST =\n")
 
   # replace name and version
-  replace_header(head, :name)
-  replace_header(head, :version)
+  replace_header(head, :name, "o-#{name}")
+  replace_header(head, :version, version)
 
   # determine file list from git ls-files
   files = `git ls-files`.
