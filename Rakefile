@@ -21,7 +21,7 @@ def date
 end
 
 def name
-  @name ||= 'o-' + Dir['*.gemspec'].first.split('.').first
+  @name ||= Dir['*.gemspec'].first.split('.').first
 end
 
 def version
@@ -63,7 +63,7 @@ def gemspec_file
 end
 
 def gem_file
-  "#{name}-#{version}.gem"
+  "o-#{name}-#{version}.gem"
 end
 
 def replace_header(head, header_name)
@@ -155,7 +155,7 @@ task :release => :build do
   sh "git tag v#{version}"
   sh "git push origin #{branch}"
   sh "git push origin v#{version}"
-  sh "gem push pkg/#{name}-#{version}.gem"
+  sh "gem push pkg/o-#{name}-#{version}.gem"
 end
 
 desc 'Publish to rubygems. Same as release'
@@ -170,7 +170,7 @@ end
 
 desc "Build and install"
 task :install => :build do
-  sh "gem install --local --no-document pkg/#{name}-#{version}.gem"
+  sh "gem install --local --no-document pkg/o-#{name}-#{version}.gem"
 end
 
 desc 'Update gemspec'
