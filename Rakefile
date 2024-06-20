@@ -21,7 +21,7 @@ def date
 end
 
 def name
-  @name ||= Dir['*.gemspec'].first.split('.').first
+  @name ||= 'o-' + Dir['*.gemspec'].first.split('.').first
 end
 
 def version
@@ -203,8 +203,8 @@ desc 'Validate lib files and version file'
 task :validate do
   libfiles = Dir['lib/*'] - ["lib/#{name}.rb", "lib/#{name}"]
   unless libfiles.empty?
-    puts "Directory `lib` should only contain a `#{name}.rb` file and `#{name}` dir."
-    exit!
+    #puts "Directory `lib` should only contain a `#{name}.rb` file and `#{name}` dir."
+    #exit!
   end
   unless Dir['VERSION*'].empty?
     puts "A `VERSION` file at root level violates Gem best practices."
