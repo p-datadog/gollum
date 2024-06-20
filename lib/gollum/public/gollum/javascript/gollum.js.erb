@@ -722,7 +722,7 @@ $(document).ready(function() {
   }
 
   if( $("#last-edit").length ) {
-    $("#page-info-toggle").click ( function () {
+//    $("#page-info-toggle").click ( function () {
       $.ajax({
         url: routePath('last_commit_info'),
         data: {path: $("#page-info-toggle").data('pagepath')},
@@ -734,7 +734,7 @@ $(document).ready(function() {
       });
       $("#last-edit").next(".dotted-spinner").toggleClass('hidden')
       $("#page-info-toggle").before('<span id="last-edit-in-progress">&nbsp;Getting commit info...</span>').remove();
-    })
+//    })
   }
 
   if( $('#wiki-wrapper.create').length ){
