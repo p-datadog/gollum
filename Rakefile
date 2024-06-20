@@ -1,3 +1,4 @@
+require 'fileutils'
 require 'rubygems'
 require 'rake'
 require 'date'
@@ -74,7 +75,7 @@ def bundle_katex_fonts(assets_path)
   fonts_source = File.join(NODE_MODULES, fonts_subpath)
   fonts_target = File.join(assets_path, fonts_subpath)
   puts "\n  Copying KaTeX fonts from #{fonts_source} to #{fonts_target}..."
-  `mkdir "#{fonts_target}"`
+  FileUtils.mkdir_p(fonts_target)
   `cp "#{fonts_source}"/*.woff2 "#{fonts_target}"/`
   puts "... Done."
 end
@@ -271,7 +272,7 @@ task :precompile do
       JS_COMPRESSOR = ::Terser.new
     end
   end
-  
+
   require './lib/gollum/app.rb'
 
   # Next, configure the Sprockets asset pipeline and precompile production-
