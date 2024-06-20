@@ -164,7 +164,7 @@ MSG
   opts.separator ''
   opts.separator '  Common:'
 
-  opts.on('--help', 'Display this message.') do
+  opts.on('-h', '--help', 'Display this message.') do
     puts opts
     exit 0
   end
