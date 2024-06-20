@@ -45,7 +45,7 @@ opts = OptionParser.new do |opts|
   opts.separator ''
   opts.separator '  Major:'
 
-  opts.on('-h', '--host [HOST]', 'Specify the hostname or IP address to listen on. Default: \'0.0.0.0\'.') do |host|
+  opts.on('-o', '--host [HOST]', 'Specify the hostname or IP address to listen on. Default: \'0.0.0.0\'.') do |host|
     options[:bind] = host
   end
   opts.on('-p', '--port [PORT]', 'Specify the port to bind Gollum with. Default: \'4567\'.') do |port|
