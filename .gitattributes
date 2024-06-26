@@ -38,3 +38,6 @@ lib/gollum/public/gollum/javascript/gollum* linguist-vendored=false
 lib/gollum/public/gollum/javascript/*/gollum* linguist-vendored=false
 lib/gollum/public/gollum/css linguist-vendored=false
 
+lib/gollum/public/assets/* binary
+lib/gollum/public/assets/**/* binary
+lib/gollum/public/gollum/javascript/*.min.js binary
