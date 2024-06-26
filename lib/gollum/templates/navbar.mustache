@@ -28,13 +28,13 @@
   <div class="TableObject-item hide-sm hide-md">
     <div class="BtnGroup d-flex">
       {{#overview}}
-        <button
+        <a
           class="btn BtnGroup-item btn-sm"
-          onclick="window.location.href='{{overview_path}}';"
+          href='{{overview_path}}'
           id="minibutton-overview"
         >
           {{tt.navbar.overview_button}}
-        </button>
+        </a>
       {{/overview}}
 
       {{#latest_changes}}
