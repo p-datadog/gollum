@@ -76,13 +76,13 @@
           >
             {{tt.navbar.rename_button}}
           </button>
-          <button
+          <a
             class="btn BtnGroup-item btn-sm hide-sm hide-md"
-            onclick="window.location.href='{{edit_path}}/{{escaped_url_path}}';"
+            href='{{edit_path}}/{{escaped_url_path}}'
             id="minibutton-edit-page"
           >
             {{tt.navbar.edit_button}}
-          </button>
+          </a>
         {{/editable}}
       {{/allow_editing}}
     </div>
