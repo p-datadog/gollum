@@ -52,13 +52,13 @@
   <div class="TableObject-item px-2">
     <div class="BtnGroup d-flex">
       {{#history}}
-        <button
+        <a
           class="btn BtnGroup-item btn-sm hide-sm hide-md"
-          onclick="window.location.href='{{history_path}}/{{escaped_url_path}}/{{version}}';"
+          href='{{history_path}}/{{escaped_url_path}}/{{version}}'
           id="minibutton-history"
         >
           {{tt.navbar.history_button}}
-        </button>
+        </a>
       {{/history}}
 
       {{#allow_editing}}
