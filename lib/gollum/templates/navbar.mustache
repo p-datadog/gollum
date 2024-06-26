@@ -91,18 +91,20 @@
   {{#allow_editing}}
     {{#editable}}
       <div class="TableObject-item">
-        <button class="btn btn-primary btn-sm minibutton-new-page">
+        <a class="btn btn-primary btn-sm minibutton-new-page"
+	href='/gollum/create/New page'>
           {{tt.navbar.new_button}}
-        </button>
+        </a>
       </div>
     {{/editable}}
 
     {{^editable}}
       {{#newable}}
         <div class="TableObject-item">
-          <button class="btn btn-primary btn-sm minibutton-new-page">
+          <a class="btn btn-primary btn-sm minibutton-new-page"
+	  href=''>
             {{tt.navbar.new_button}}
-          </button>
+          </a>
         </div>
       {{/newable}}
     {{/editable}}

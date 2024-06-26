@@ -21,6 +21,10 @@ module Precious
           create: 'create',
           delete: 'delete',
           edit: 'edit',
+          # Doesn't work right? extra gollum prefix in newly created page path
+          #new: 'new',
+          # Also doesn't work, interface is only designed for JS?
+          #create: 'create',
           overview: 'overview',
           history: 'history',
           rename: 'rename',
