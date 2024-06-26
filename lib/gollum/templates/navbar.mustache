@@ -38,13 +38,13 @@
       {{/overview}}
 
       {{#latest_changes}}
-        <button
+        <a
           class="btn BtnGroup-item btn-sm"
-          onclick="window.location.href='{{latest_changes_path}}';"
+          href='{{latest_changes_path}}'
           id="minibutton-latest-changes"
         >
           {{tt.navbar.latest_changes_button}}
-        </button>
+        </a>
       {{/latest_changes}}
     </div>
   </div>
