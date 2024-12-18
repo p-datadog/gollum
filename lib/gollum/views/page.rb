@@ -1,3 +1,5 @@
+require 'rinku'
+
 module Precious
   module Views
     class Page < Layout
@@ -5,7 +7,7 @@ module Precious
       include HasMath
 
       attr_reader :page, :header, :footer, :preview, :historical, :version
-      
+
       VALID_COUNTER_STYLES = ['decimal', 'decimal-leading-zero', 'arabic-indic', 'armenian', 'upper-armenian',
         'lower-armenian', 'bengali', 'cambodian', 'khmer', 'cjk-decimal', 'devanagari', 'georgian', 'gujarati', 'gurmukhi',
         'hebrew', 'kannada', 'lao', 'malayalam', 'mongolian', 'myanmar', 'oriya', 'persian', 'lower-roman', 'upper-roman',
@@ -39,7 +41,7 @@ module Precious
       end
 
       def content
-        content_without_page_header(@content)
+        Rinku.auto_link(content_without_page_header(@content))
       end
 
       def author
@@ -47,7 +49,7 @@ module Precious
         return DEFAULT_AUTHOR unless first
         first.author.name.respond_to?(:force_encoding) ? first.author.name.force_encoding('UTF-8') : first.author.name
       end
-      
+
       def date_full
         first = @version ? page.version : page.last_version
         return Time.now unless first
@@ -57,11 +59,11 @@ module Precious
       def date
         date_full.strftime(DATE_FORMAT)
       end
-      
+
       def datetime
         date_full.utc.iso8601
       end
-      
+
       def date_format
         DATE_FORMAT
       end
