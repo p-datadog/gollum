@@ -738,7 +738,7 @@ $(document).ready(function() {
   }
 
   if( $('#wiki-wrapper.create').length ){
-    $("#gollum-editor-submit").click( function() { window.onbeforeunload = null; } );
+    $("#gollum-editor-form").submit( function() { window.onbeforeunload = null; } );
     $("#gollum-editor-body").one('change', function(){
       window.onbeforeunload = function(){ return "Leaving will not create a new page!" };
     });
