@@ -116,7 +116,7 @@ module Precious
       @redirects_enabled = settings.wiki_options.fetch(:redirects_enabled, true)
       @per_page_uploads = settings.wiki_options[:per_page_uploads]
       @show_local_time = settings.wiki_options.fetch(:show_local_time, false)
-      
+
       @wiki_title = settings.wiki_options.fetch(:title, 'Gollum Wiki')
       @default_keybinding = settings.wiki_options.fetch(:default_keybinding, 'default')
 
@@ -162,7 +162,7 @@ module Precious
       get '/feed/' do
         url = "#{env['rack.url_scheme']}://#{env['HTTP_HOST']}"
         changes = wiki_new.latest_changes(::Gollum::Page.log_pagination_options(
-          per_page: settings.wiki_options.fetch(:pagination_count, 10),
+          per_page: settings.wiki_options.fetch(:pagination_count, 100),
           page_num: 0)
         )
         content_type :rss
@@ -259,7 +259,7 @@ module Precious
           tempfile = params[:file][:tempfile]
         end
         halt 500 unless tempfile.is_a? Tempfile
-        
+
         dir = wiki.per_page_uploads ? find_per_page_upload_subdir(request.referer, request.host_with_port, wiki.base_path) : 'uploads'
 
         halt 500 if dir.include?('..')
@@ -469,7 +469,7 @@ module Precious
       get '/latest_changes' do
         @wiki = wiki_new
         @page_num = [params[:page_num].to_i, 1].max
-        @max_count = settings.wiki_options.fetch(:pagination_count, 10)
+        @max_count = settings.wiki_options.fetch(:pagination_count, 100)
         @versions = @wiki.latest_changes(::Gollum::Page.log_pagination_options(per_page: @max_count, page_num: @page_num))
         mustache :latest_changes
       end
