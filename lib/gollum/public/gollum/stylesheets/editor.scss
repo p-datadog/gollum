@@ -1,10 +1,10 @@
-#gollum-editor-body { width:100%; }
-
-// Wiki editor formatting
-
 @use "_base";
 @use "_features";
 @use "_breakpoint";
+
+// Wiki editor formatting
+
+#gollum-editor-body { width:100%; }
 
 a {
   -moz-outline: none !important;
