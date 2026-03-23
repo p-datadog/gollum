@@ -83,19 +83,19 @@ module Precious
 
       # Navigation bar
       def search
-        false
+        true
       end
 
       def history
-        false
+        false # Page-specific: needs escaped_url_path and version
       end
 
       def overview
-        false
+        true
       end
 
       def latest_changes
-        false
+        true
       end
 
     end

@@ -12,6 +12,7 @@ module Precious
         t[:title]
       end
 
+
       def versions
         i = @versions.size + 1
         @versions.map do |v|

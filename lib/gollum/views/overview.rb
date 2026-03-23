@@ -71,9 +71,6 @@ module Precious
         @results.empty?
       end
 
-      def latest_changes
-        true
-      end
 
 
     end

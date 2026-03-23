@@ -30,14 +30,6 @@ module Precious
         true # View has searchbar
       end
 
-      def overview
-        true
-      end
-
-      def latest_changes
-        true
-      end
-
       def has_search_terms
         !@search_terms.empty?
       end
